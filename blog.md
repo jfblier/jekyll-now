@@ -9,7 +9,7 @@ permalink: /blog/
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	  <div class="date">
-		Posted on <a href="{{ site.baseurl }}{{ post.url }}">{{ page.date | date: "%B %e, %Y" }}</a>
+		Posted on {{ page.date | date: "%B %e, %Y" }}
 	  </div>
 	  {% if page.image %}
 		  <div class="image">
