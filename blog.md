@@ -12,6 +12,7 @@ permalink: /blog/
 		Posted on {{ page.date | date: "%B %e, %Y" }}
 	  </div>
 	  {% if page.image %}
+			ICI mon IMAGE
 		  <div class="image">
 			<img src="{{ site.url }}/images/{{ page.image }}"/>
 		  </div>
