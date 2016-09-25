@@ -12,4 +12,4 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 <!--more-->
 
 
-<img src="{{ site.url }}/images/cloud-architecture/external-configuration-store/Diagram-External-Configuration-Store.png">
+This is after.....
