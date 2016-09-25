@@ -17,7 +17,33 @@ permalink: /about/
 		<li>C++</li>
 	</ul>
 	<li>Azure Platform</li>
+	<ul>
+		<li>AppService WebApp, Cloud Service</li>
+		<li>Virtual Machines (VM), Availability Sets</li>
+		<li>Azure Storage (Blob, Table)</li>
+		<li>SqlAzure</li>
+		<li>Virtual Network, NSG, Interface</li>
+		<li>Azure Insights</li>
+		<li>Identity, AD FS</li>
+		<li>Load Balancer, Traffic Manager</li>
+		<li>Azure automation : PowerShell, .NET SDK</li>
+	</ul>
+	<li>RDBMS</li>
+	<ul>
+		<li>SqlServer</li>
+		<li>Oracle</li>
+		<li>Access, PostgreSQL</li>
+	</ul>
+	<li>WebServer</li>
+	<ul>
+		<li>IIS</li>
+		<li>Apache</li>
+	</ul>
+	<li>OS</li>
+	<ul>
+		<li>Windows Server</li>
+		<li>Linux</li>
+	</ul>
 </ul>
 
-
-I have big interest in the various development methodologies, mainly Agile, putting the customer at heart and needs.
+<p>I have big interest in the various development methodologies, mainly Agile, putting the customer at heart and needs.</p>
