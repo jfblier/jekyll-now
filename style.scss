@@ -115,11 +115,6 @@ img {
   max-width: none;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -252,12 +247,13 @@ nav {
 }
 
 .post {
-  h2 {
+  h1,h2 {
     padding-bottom: 5px;
   }
 	
   date {	
     font-size: 0.8em;
+    color: #757575;
     
     post-date {
       font-color: $postdate;
