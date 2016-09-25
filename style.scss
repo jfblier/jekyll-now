@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+  background: $white;
+  font: 14px/1.4 $helvetica;
   color: $darkGray;
 }
 
@@ -254,6 +254,7 @@ nav {
   .date {	
     font-size: 0.8em;
     color: #757575;
+    padding-botton: 24px;
     
     .post-date {
       font-color: $postdate;
