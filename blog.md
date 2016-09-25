@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+permalink: /cloud-architecture/
 ---
 
 <div class="posts">
