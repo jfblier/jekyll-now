@@ -9,14 +9,16 @@ permalink: /blog/
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	  <div class="date">
-		Posted on {{ page.date | date: "%B %e, %Y" }}
+		Posted on {{ post.date | date: "%B %e, %Y" }}
 	  </div>
-	  {% if page.image %}
+	  {% if post.image %}
 			ICI mon IMAGE
 		  <div class="image">
 			<img src="{{ site.url }}/images/{{ page.image }}"/>
 		  </div>
 	  {% endif %}
+
+	  <p>test</p>
 
       <div class="entry">
         {{ post.excerpt }}
