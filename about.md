@@ -14,3 +14,8 @@ I have strong expertise and experiences with the following technologies:
 
 *Language
 *Azure Platform
+
+<ul>
+<li>Language</li>
+<li>Azure Platform</li>
+</ul>
