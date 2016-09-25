@@ -248,14 +248,14 @@ nav {
 
 .post {
   h1,h2 {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 	
-  date {	
+  .date {	
     font-size: 0.8em;
     color: #757575;
     
-    post-date {
+    .post-date {
       font-color: $postdate;
     }
   }
