@@ -36,7 +36,7 @@ excerpt_separator: <!--more-->
 <p>There's a lot of implementations that you can choose depending if your hosting is in a Cloud or On-Premise platform. As we are using the Azure Cloud, we will describe the Azure Storage and Azure Databases (SqlAzure) options.</p>
 <h4>Azure Storage</h4>
 <p>The Azure platform offer a <strong>Read Access-Geo Redundant</strong> <a href="https://azure.microsoft.com/en-us/services/storage/?b=16.37">Storage</a> (RA-GRS) that has <a href="https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_0/">99.99% SLA</a> on read. To have this level of SLA you need to select the Replication type <em>Read-access geo-redundant storage </em>:</p>
-<p style="padding-left:30px;"><img class="alignnone size-full wp-image-92" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/ga-grs-storage.png" alt="RA-GRS storage" width="281" height="55" /></p>
+<p style="padding-left:30px;"><img class="alignnone size-full wp-image-92" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/GA-GRS-storage.png" alt="RA-GRS storage" width="281" height="55" /></p>
 <p>The cost is really low (pennies per month).</p>
 
 <p>You can use the <strong>Blob</strong> or <strong>Table</strong> to store you configurations. With both approaches you can decide to have the configurations of all your applications into one file/table or to divide them per application. It depends on your needs. A few things to thinks about:</p>
@@ -78,7 +78,7 @@ excerpt_separator: <!--more-->
 <p>In the <strong>Azure Portal</strong>, click <strong>+ New</strong>, under the marketplace, select <strong>Storage</strong>, select <strong>Storage account</strong>. Fill the information required. As we want high-availability, ensure that you select <strong>Read-access geo-redundant storage (RA-GRS)</strong> under the <strong>replication</strong> box. Click the <strong>Create</strong> button. The storage is created.</p>
 
 <p>You need to create the Container under which you will put your configuration files. In the <strong>Azure Portal</strong>, Click <strong>All resources</strong>, <strong>select the newly create storage</strong>. In the <strong>Overview</strong> pane that is shown, under the <strong>Services</strong> section, click on <strong>Blobs</strong>. Click on the <strong>+ Container</strong> button. In <strong>Name</strong>, enter <strong>appconfiguration</strong>. Leave the Access type to private. Click <strong>Create</strong>. After the creation, you should have your container:</p>
-<p style="padding-left:30px;"><img class="alignnone size-full wp-image-106" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/appconfiguration-container.png" alt="appconfiguration-container" width="342" height="72" /></p>
+<p style="padding-left:30px;"><img src="{{ site.url }}/images/cloud-architecture/external-configuration-store/appconfiguration-container.png" alt="appconfiguration-container" width="342" height="72" /></p>
 
 <h3>Application configuration file</h3>
 <p>Let's create a configuration file named ConfigurationTester.xml that will be used for test:</p>
