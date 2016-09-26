@@ -250,7 +250,7 @@ nav {
   h1,h2 {
     margin-bottom: 0;
   }
-	
+
   .date {	
     font-size: 0.8em;
     color: #757575;
@@ -259,6 +259,10 @@ nav {
     .post-date {
       font-color: $postdate;
     }
+  }
+
+  .featured-image {
+    text-align: center;
   }
 	
   blockquote {
