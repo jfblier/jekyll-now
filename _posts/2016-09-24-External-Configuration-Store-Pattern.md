@@ -36,7 +36,7 @@ excerpt_separator: <!--more-->
 <p>There's a lot of implementations that you can choose depending if your hosting is in a Cloud or On-Premise platform. As we are using the Azure Cloud, we will describe the Azure Storage and Azure Databases (SqlAzure) options.</p>
 <h4>Azure Storage</h4>
 <p>The Azure platform offer a <strong>Read Access-Geo Redundant</strong> <a href="https://azure.microsoft.com/en-us/services/storage/?b=16.37">Storage</a> (RA-GRS) that has <a href="https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_0/">99.99% SLA</a> on read. To have this level of SLA you need to select the Replication type <em>Read-access geo-redundant storage </em>:</p>
-<p style="padding-left:30px;"><img class="alignnone size-full wp-image-92" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/GA-GRS-storage.png" alt="RA-GRS storage" width="281" height="55" /></p>
+<p style="padding-left:30px;"><img class="alignnone size-full wp-image-92" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/ga-grs-storage.png" alt="RA-GRS storage" width="281" height="55" /></p>
 <p>The cost is really low (pennies per month).</p>
 
 <p>You can use the <strong>Blob</strong> or <strong>Table</strong> to store you configurations. With both approaches you can decide to have the configurations of all your applications into one file/table or to divide them per application. It depends on your needs. A few things to thinks about:</p>
