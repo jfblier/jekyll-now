@@ -3,7 +3,7 @@ layout: post
 title: External Configuration Store
 category: Cloud Architecture
 tags: Application configuration, Cloud Architecture pattern, Storage
-image: cloud-architecture/external-configuration-store/Diagram-External-Configuration-Store.png
+image: cloud-architecture/external-configuration-store/diagram-external-configuration-store.png
 date: 2016-09-23 17:00:00 -0700
 excerpt_separator: <!--more-->
 ---
@@ -25,7 +25,7 @@ excerpt_separator: <!--more-->
 <h2>Solution</h2>
 <p>Store configurations in a External Store.</p>
 
-<img class=" size-full wp-image-135 aligncenter" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/diagram-external-configuration-store.png" alt="diagram-external-configuration-store" width="341" height="187" />
+<img style="text-align:center" src="{{ site.url }}/images/cloud-architecture/external-configuration-store/diagram-external-configuration-store.png" alt="diagram-external-configuration-store" width="341" height="187" />
 
 <p>As the latency of retrieving values from the External Store could be too high and also because the External Store may not be available during a fraction of a seconds, a Local Cache is used in the application.</p>
 <h3>Concerns</h3>
