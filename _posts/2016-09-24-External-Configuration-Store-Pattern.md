@@ -4,7 +4,6 @@ title: External Configuration Store
 category: Cloud Architecture
 tags: Application configuration, Cloud Architecture pattern, Storage
 image: cloud-architecture/external-configuration-store/Diagram-External-Configuration-Store.png
-date: 2016-09-24 00:00:00
 excerpt_separator: <!--more-->
 ---
 
