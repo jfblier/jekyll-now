@@ -25,5 +25,6 @@ permalink: /blog/
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+	<hr/>
   {% endfor %}
 </div>
