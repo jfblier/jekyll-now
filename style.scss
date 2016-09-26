@@ -265,11 +265,12 @@ nav {
   }
 	
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    margin: 1.8em 0;
+    background-color: #eee;
+    border-left: 4px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 1em;
     font-style: italic;
   }
 
