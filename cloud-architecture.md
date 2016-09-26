@@ -11,4 +11,4 @@ permalink: /cloud-architecture/
 <h2>External Configuration Store Pattern</h2>
 <p>In Azure, there's different deployment models for WebApp, Cloud Service and Virtual Machine (VM). Each deployment model has it's own way of providing application configurations which led to a complexity to manage and update configurations. Some model requires redeploying the application which requires downtime (application restart) and operational times which can be unacceptable. Configuring multi-instance application is even more complex by the fact.</p>
 <p>The pattern allow changes at run-time, the centralization and the unification of application configuration management.</p>
-<a href="{{ site.baseurl }}//external-configuration-store/">Read the article</a>
+<a href="{{ site.baseurl }}/external-configuration-store-pattern">Read the article</a>
