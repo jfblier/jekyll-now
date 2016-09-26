@@ -74,7 +74,7 @@ excerpt_separator: <!--more-->
 <p>The implementation that I will do is with an Azure Storage that will use a Blob Storage. Each application configurations will be stored in a different file in the storage.</p>
 
 <h3>Create the storage</h3>
-<blockquote><small><span style="text-decoration:underline;"><strong>Automation</strong></span><strong> - </strong>I normally automate everything with Azure PowerShell, but in this article, as the goal is not automation, I will describe the steps using the Azure Portal as it's simpler, but I encourage you to automate it.</small></blockquote>
+<blockquote><span style="text-decoration:underline;"><strong>Automation</strong></span><strong> - </strong>I normally automate everything with Azure PowerShell, but in this article, as the goal is not automation, I will describe the steps using the Azure Portal as it's simpler, but I encourage you to automate it.</blockquote>
 <p>In the <strong>Azure Portal</strong>, click <strong>+ New</strong>, under the marketplace, select <strong>Storage</strong>, select <strong>Storage account</strong>. Fill the information required. As we want high-availability, ensure that you select <strong>Read-access geo-redundant storage (RA-GRS)</strong> under the <strong>replication</strong> box. Click the <strong>Create</strong> button. The storage is created.</p>
 
 <p>You need to create the Container under which you will put your configuration files. In the <strong>Azure Portal</strong>, Click <strong>All resources</strong>, <strong>select the newly create storage</strong>. In the <strong>Overview</strong> pane that is shown, under the <strong>Services</strong> section, click on <strong>Blobs</strong>. Click on the <strong>+ Container</strong> button. In <strong>Name</strong>, enter <strong>appconfiguration</strong>. Leave the Access type to private. Click <strong>Create</strong>. After the creation, you should have your container:</p>
@@ -89,7 +89,7 @@ excerpt_separator: <!--more-->
 &lt;/ApplicationConfigurations&gt;
 </code></pre>
 <p>Upload the file under the Storage Container <em>appconfiguration</em> you created previously.</p>
-<blockquote><small><span style="text-decoration:underline;"><strong>How-To</strong></span><strong> - </strong>Use the <strong>Cloud Explorer</strong> in <strong>Visual Studio</strong> or <a href="http://storageexplorer.com/" target="_blank">Microsoft Azure Storage Explorer</a> which is a standalone application.</small></blockquote>
+<blockquote><span style="text-decoration:underline;"><strong>How-To</strong></span><strong> - </strong>Use the <strong>Cloud Explorer</strong> in <strong>Visual Studio</strong> or <a href="http://storageexplorer.com/" target="_blank">Microsoft Azure Storage Explorer</a> which is a standalone application.</blockquote>
 
 <h3>ApplicationConfigurationManager class</h3>
 <p>Let's create the ApplicationConfigurationManager class that will handle reading the external file and give access to the configuration keys/values.</p>
@@ -181,7 +181,7 @@ namespace ExternalConfigurationStorePattern
 <p>I let the application provide the information on the Storage and the name of the file, that not the responsibility of the ApplicationConfigurationManager to know how to find it, but the application responsibility.</p>
 
 <p>If you decide to implement a unified configuration file, remove the applicationName field.</p>
-<blockquote><small><span style="text-decoration:underline;"><strong>Note</strong></span><strong> - </strong>There's no error handling code. That's a good idea to add it if you want to use it in a production environment.</small></blockquote>
+<blockquote><span style="text-decoration:underline;"><strong>Note</strong></span><strong> - </strong>There's no error handling code. That's a good idea to add it if you want to use it in a production environment.</blockquote>
 <h3>Usage</h3>
 <p>Here's the code demonstrating the usage of the class. You need to replace ACCOUNT_NAME and ACCOUNT_KEY with your storage values.</p>
 <pre><code>using System;
