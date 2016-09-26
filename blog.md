@@ -12,7 +12,7 @@ permalink: /blog/
 		Posted on <span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span>
 	  </div>
 	  {% if post.image %}
-		  <div class="image">
+		  <div class="featured-image">
 			<img src="{{ site.url }}/images/{{ post.image }}"/>
 		  </div>
 	  {% endif %}
